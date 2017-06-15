@@ -1,0 +1,181 @@
+h1 {
+	padding-top: 25px;
+	padding-bottom: 18px;
+	font-size: 2.5em;
+	color: rgb(160,160,160);
+}
+h2 {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 2em;
+	color: rgb(150,150,150);
+}
+h3 {
+	padding-bottom: 10px;
+	font-size: 1.8em;
+	color: rgb(150,150,150);
+}
+h4 {
+	padding-bottom: 7px;
+	font-size: 1.5em;
+	color: rgb(141,141,141);
+}
+h5 {
+	font-weight: normal;
+	font-size: 1.3em;
+	color: rgba(250,50,50,.6);
+	font-style: italic;
+}
+
+p {
+	color: rgb(130,130,130);
+	font-size: 1.1em;
+	padding-top: 5px;
+	padding-bottom: 20px;
+}
+
+a:link, a:visited {
+   font-weight: bold;
+   text-decoration: none;
+   outline: none;
+   color: rgb(141,141,141);
+   }
+a:hover {
+   color: rgb(190,190,190);
+   }
+
+body, html {
+   font: normal 100% "Lucida Sans", "Helvetica", "Arial", "sans-serif";
+   background-color: rgb(20,20,20);
+   }
+
+#wrap {
+	margin: 0 auto;
+	position: relative;
+	background-color: rgb(25,25,25);
+}
+
+#header-text a {
+	padding-left: 3%;
+	text-shadow: 0px 0px 8px rgba(150,150,150,.5);
+   text-decoration: none;
+   outline: none;
+	display: block;
+	font-size: 1.5em;
+	color: rgb(210,210,210);
+}
+
+#header {
+	width: 100%;
+	background-color: rgb(30,30,30);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgb(50,50,50);
+}
+
+#side-menu {
+	font-size: 1.2em;
+	float: left;
+	background-color: rgb(25,25,25);
+	width: 19%;
+	color: rgb(141,141,141);
+	padding: 0px;
+	padding-top: 10px;
+
+	
+}
+#side-menu ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+#side-menu ul li:last-child {
+border-bottom: 1px solid rgb(40,40,40);
+padding-bottom: 10px;
+
+}
+
+#side-menu a {
+	text-decoration: none;
+	display: block;
+    padding: 9px ;
+    padding-left: 15px;
+   
+}
+
+
+#side-menu li a:hover {
+	text-shadow: 1px 1px 6px rgba(150,150,150,.6);
+	background-color: rgb(50,50,50);
+	color: rgb(230,230,230);
+}
+
+#main {
+padding-left: 1%;
+padding-right: .5%;
+	width: 58.5%;
+	margin-left: 20%;
+	margin-right: 20%;
+	background-color: rgb(20,20,20);
+	border-right: 1px solid rgb(50,50,50);
+	border-left: 1px solid rgb(50,50,50);
+}
+
+
+#sidebar {
+	text-shadow: 1px 1px 4px rgba(110,110,110,.5);
+	float: right;
+	background-color: rgb(25,25,25);
+	width: 19%;
+	font-size: 0.9em;
+}
+
+#sidebar h4 {
+	padding-top: 10px;
+	color: rgb(210,210,210);
+	font-size: 1.5em;
+	text-align: center;
+	margin: 4px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid rgb(40,40,40);
+}
+
+#sidebar p {
+	padding: 5px;
+	padding-bottom: 10px;
+}
+
+#footer {
+	text-align: center;
+	padding-left: 2%;
+	padding-right: 2%;
+	width: 96%;
+	border-top: 1px solid rgb(50,50,50);
+	background-color: rgb(20,20,20);
+	clear: both;
+	padding-top: 7px;
+	padding-bottom: 20px;
+}
+
+#copyright {
+	font-size: 0.9em;
+	color: rgb(70,70,70);
+}
+
+@media (max-width: 800px) { /* это будет показано при разрешении экрана до 800 пикселей */
+  #wrap {width: 100%;} 
+  #sidebar {display:none; width: 0;}
+  #main {width: 64%; margin-right: 0; margin-left: 32%; padding-left: 10px; padding-right: 1%; border-right: 0; border-left: 1px solid rgb(50,50,50);}
+  #side-menu {width: 29%; margin-right: 0; margin-left: 0; padding-left: 0; padding-right: 0;}
+  #footer {width: 100%; margin-right: 0; margin-left: 0; clear: both; padding-left: 0; padding-right: 0;}
+}
+
+@media (max-width: 500px) { /* это будет показано при разрешении экрана до 500 пикселей */
+  #wrap {width: 100%;} 
+  #sidebar {display:none; width: 0;}
+  #main {width: 91%; margin-right: 0; margin-left: 0; clear: both; padding-left: 3%; padding-right: 5%;}
+  #side-menu {width: 100%; margin-right: 0; margin-left: 0; clear: both; padding-left: 0; padding-right: 0;}
+  #side-menu ul {text-align: center;}
+  #footer {width: 100%; margin-right: 0; margin-left: 0; clear: both; padding-left: 0; padding-right: 0;}
+}
